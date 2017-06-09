@@ -8,175 +8,113 @@
     tools:context="com.example.rahul.buildasinglescreenapp.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="122dp"
-        android:layout_height="43dp"
-        android:ems="10"
-        android:inputType="none"
-        android:clickable="false"
-        android:cursorVisible="false"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:text="FC Barcelona"
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="@+id/editText6"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="194dp"
+        android:layout_marginTop="8dp"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="194dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
 
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="0dp"
-        android:layout_height="71dp"
-        android:ems="10"
-        android:inputType="none"
-        android:clickable="false"
-        android:cursorVisible="false"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:text="Footbol Club Barcelona, commonly known as Barcelona and familiarly as Barça, is a professional football club based in Barcelona, Catalonia, Spain."
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="@+id/editText4"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="42dp"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="44dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editText"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintVertical_bias="0.0" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        android:ems="10"
-        android:inputType="none"
-        android:selectAllOnFocus="false"
-        android:clickable="false"
-        android:cursorVisible="false"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:text="Manager                      :  Ernesto Valverede"
-        android:textStyle="bold"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="4dp"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="160dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="4dp"
-        android:layout_marginRight="4dp"
-        app:layout_constraintHorizontal_bias="1.0" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center" >
 
-    <EditText
-        android:id="@+id/editText5"
-        android:layout_width="0dp"
-        android:layout_height="39dp"
-        android:ems="10"
-        android:inputType="none"
-        android:clickable="false"
-        android:cursorVisible="false"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:text="Arena/Stadium            :  Camp Nou"
-        android:textStyle="bold"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/editText6"
-        android:layout_marginStart="4dp"
-        android:layout_marginEnd="4dp"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="4dp"
-        android:layout_marginRight="4dp"
-        app:layout_constraintHorizontal_bias="0.0" />
+                <EditText
+                    android:id="@+id/editText6"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:text="FC Barcelona 2017"
+                    android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/editText6"
-        android:layout_width="0dp"
-        android:layout_height="43dp"
-        android:ems="10"
-        android:inputType="none"
-        android:clickable="false"
-        android:cursorVisible="false"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:text="Location                       :  Bracelona, Spain "
-        android:textStyle="bold"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="@+id/editText5"
-        android:layout_marginTop="79dp"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="80dp"
-        app:layout_constraintLeft_toLeftOf="@+id/editText5"
-        app:layout_constraintTop_toTopOf="@+id/editText4"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="1.0" />
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="199dp"
+                    app:srcCompat="@drawable/barcelona" />
 
-    <EditText
-        android:id="@+id/editText8"
-        android:layout_width="0dp"
-        android:layout_height="43dp"
-        android:ems="10"
-        android:inputType="none"
-        android:clickable="false"
-        android:cursorVisible="false"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:text="Most goals by a player  :  Lionel Messi"
-        android:textStyle="bold"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="3dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="3dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="43dp"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="37dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editText6"
-        android:layout_marginLeft="3dp"
-        android:layout_marginRight="3dp"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintVertical_bias="0.0" />
+                <EditText
+                    android:id="@+id/editText7"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    android:text="Footbol Club Barcelona, commonly known as Barcelona and familiarly as Barça, is a professional football club based in Barcelona, Catalonia, Spain."
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="0dp"
-        android:layout_height="189dp"
-        app:srcCompat="@drawable/barcelona"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.013"
-        android:layout_marginStart="7dp"
-        android:layout_marginEnd="7dp"
-        android:layout_marginLeft="7dp"
-        android:layout_marginRight="7dp" />
+                <EditText
+                    android:id="@+id/editText4"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textStyle="bold"
+                    android:text="Manager : Ernesto Valverde" />
 
+                <EditText
+                    android:id="@+id/editText3"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textStyle="bold"
+                    android:text="Arena/ Stadium : Camp Nou" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textStyle="bold"
+                    android:text="Location : Barcelona, Spain" />
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textStyle="bold"
+                    android:text="Best Player : Messi" />
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
